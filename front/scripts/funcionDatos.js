@@ -4,7 +4,7 @@ const axios= require ("axios");
 
 const funcionDatos=  async () => {
   try {
-    const data= await axios.get("https://students-api.up.railway.app/movies");
+    const data= await axios.get("http://localhost:3000/movies");
   
     const tarjetasContainer = document.getElementById("tarjetasContainer");
     tarjetasContainer.innerHTML = "";
