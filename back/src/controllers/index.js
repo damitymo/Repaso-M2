@@ -2,8 +2,8 @@ const services = require("../services/index");
 
 const movieController= async(req, res)=>{
     try {
-        const movies= await services.getMovies();
-        res.status(200).json(movies);
+        const peliculas= await services.getMovies();
+        res.status(200).json(peliculas);
 
     } catch (error) {
         console.log(error);
